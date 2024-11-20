@@ -1,6 +1,9 @@
-import './assets/main.css'
-
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import bem from './plugins/bem'
+
+const app = createApp(App)
+
+app.use(bem)
+app.mount('#app')
